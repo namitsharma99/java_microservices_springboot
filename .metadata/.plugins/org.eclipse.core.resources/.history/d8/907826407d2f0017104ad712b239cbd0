@@ -1,0 +1,39 @@
+package rest;
+
+import java.util.Date;
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.MediaType;
+import org.springframework.web.client.RestTemplate;
+
+@Named
+@Path("/details")
+public class DetailsRest {
+	private long id = 1;
+	@Inject
+	private RestTemplate restTemplate;
+
+	@GET
+	@Path("detailsApi")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Details submitRequest(@QueryParam("id") int subjectId) {
+		Details details = new Details();
+		Customer customer = restTemplate.getForObject(
+				"http://localhost:8091/customer/getCustomer?id={id}", Customer.class,
+				idCustomer);
+		Product product = restTemplate.getForObject(
+				"http://localhost:8092/product/getProduct?id={id}", Product.class,
+				idProduct);
+		order.setCustomer(customer);
+		order.setProduct(product);
+		order.setId(id);
+		order.setAmount(amount);
+		order.setDateOrder(new Date());
+		id++;
+		return order;
+	}
+}

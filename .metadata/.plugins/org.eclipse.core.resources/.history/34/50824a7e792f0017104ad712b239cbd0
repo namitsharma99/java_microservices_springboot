@@ -1,0 +1,15 @@
+package rest;
+
+public class Teacher {
+	
+	private int teacherId;
+	private String teacherName;
+	private int subjectId;
+	public int getTeacherId() {
+		return teacherId;
+	}
+	public void setTeacherId(int teacherId) {
+		this.teacherId = teacherId;
+	}
+
+}

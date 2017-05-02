@@ -1,0 +1,5 @@
+package myPack.rest;
+
+public class ProductRest {
+
+}

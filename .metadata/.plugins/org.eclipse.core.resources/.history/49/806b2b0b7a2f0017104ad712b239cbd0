@@ -1,0 +1,12 @@
+package rest;
+
+public class Details {
+
+	private int subjectId;
+	private int teacherId;
+	private String teacherName;
+	private String subjectName;
+	
+	
+	
+}

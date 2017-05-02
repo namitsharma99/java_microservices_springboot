@@ -1,0 +1,9 @@
+package rest;
+
+public class Teacher {
+	
+	private int teacherId;
+	private String teacherName;
+	private int subjectId;
+
+}

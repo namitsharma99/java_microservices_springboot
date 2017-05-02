@@ -1,0 +1,7 @@
+1493758687868	Encapsulate field 'subjectId'
+1493758693086	Encapsulate field 'teacherId'
+1493758697463	Encapsulate field 'teacherName'
+1493758704316	Encapsulate field 'subjectName'
+1493758771373	Encapsulate field 'teacher'
+1493758775345	Encapsulate field 'subject'
+1493760279912	Rename package 'resources'

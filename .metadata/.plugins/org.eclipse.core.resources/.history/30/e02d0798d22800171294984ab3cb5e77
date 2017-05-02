@@ -1,0 +1,12 @@
+package sample;
+
+public class A {
+
+	A() {
+		System.out.println("A const");
+	}
+	
+	void display() {
+		System.out.println("A");
+	}
+}

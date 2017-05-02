@@ -1,0 +1,12 @@
+package sample;
+
+public class B extends A {
+	
+	A() {
+		System.out.println("A const");
+	}
+
+	void display() {
+		System.out.println("B");
+	}
+}
